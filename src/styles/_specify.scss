@@ -1,0 +1,88 @@
+.specify {
+  margin-top: 60px;
+  padding-bottom: 100px;
+  .container1170px {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 45px;
+    line-height: 60px;
+    color: #3f2803;
+    text-align: center;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      padding-top: 0px;
+    }
+  }
+
+  &__item {
+    padding: 0 5px;
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+    }
+    div span {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: none;
+      color: #3f2803;
+      @media screen and (max-width: 767px) {
+        font-size: 18px;
+      }
+    }
+
+    div:last-child {
+      font-family: Arial, sans-serif;
+      color: #80b500;
+      line-height: 30px;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: none;
+      @media screen and (max-width: 1170px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      @media screen and (max-width: 767px) {
+        padding-top: 0;
+        font-size: 15px;
+        line-height: 17px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (max-width: 939px) {
+      margin-top: 40px;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 21px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 40px;
+      font-size: 35px;
+      line-height: 30px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 748px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+}

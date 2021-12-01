@@ -1,0 +1,147 @@
+.main {
+  @media screen and (max-width: 620px) {
+    .container1170px {
+      padding: 0;
+    }
+  }
+}
+.title {
+  position: relative;
+  height: 330px;
+  margin: 135px auto 0;
+  color: #3f2803;
+  text-align: center;
+  border-bottom: 2px solid #f2f5f8;
+  background: url(../images/title/greenhouse-and-girl.jpg) no-repeat 0% 0%;
+
+  &__title {
+    padding-left: 120px;
+    h1 {
+      font-size: 90px;
+      line-height: 90px;
+      font-weight: bold;
+      font-family: "Lora";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      span {
+        display: block;
+        padding: 15px 0 0 0;
+        color: #80b500;
+        font-size: 38px;
+        line-height: 40px;
+        @media screen and (max-width: 1240px) {
+          padding: 5px 0 0;
+          color: #3f2803;
+        }
+        @media screen and (max-width: 900px) {
+          padding-left: 0;
+          font-size: 30px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        margin-top: -15px;
+        padding-left: 0;
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      @media screen and (max-width: 490px) {
+        padding-top: 60px;
+      }
+    }
+
+    strong {
+      display: block;
+      padding: 15px 0 0 0px;
+      color: #80b500;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 40px;
+      @media screen and (max-width: 1240px) {
+        padding: 5px 0 0;
+        color: #3f2803;
+        font-size: 36px;
+      }
+      @media screen and (max-width: 767px) {
+        padding-left: 0;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    @media screen and (max-width: 1240px) {
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    height: 60px;
+    min-width: 330px;
+    margin: 33px 0 0 105px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: linear-gradient(#92cf00, #6e9c00);
+    border-radius: 5px;
+    border-bottom: 5px solid #5c8200;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+    line-height: 57px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+      background: linear-gradient(#b5ff03, #80b500);
+    }
+
+    @media screen and (max-width: 1240px) {
+      margin: 30px 0 0 35px;
+    }
+    @media screen and (max-width: 767px) {
+      margin: 30px 0 0 0px;
+      min-width: 240px;
+    }
+  }
+
+  &__warranty {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    @media screen and (max-width: 1100px) {
+      width: 180px;
+      height: 130px;
+      overflow: hidden;
+    }
+    @media screen and (max-width: 767px) {
+      width: 160px;
+      height: 110px;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 620px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 620px) {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}

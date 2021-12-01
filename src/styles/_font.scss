@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("ArialRegular"), url(./fonts/ArialRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("ArialBold"), url(./fonts/ArialBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("LoraBold"), url(./fonts/LoraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("LoraRegular"), url(./fonts/LoraRegular.ttf) format("truetype");
+}

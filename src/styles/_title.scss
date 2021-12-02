@@ -1,3 +1,18 @@
+@mixin greenBtn {
+  padding: 0 45px;
+  background: linear-gradient(#92cf00, #6e9c00);
+  border-radius: 5px;
+  border-bottom: 5px solid #5c8200;
+  cursor: pointer;
+  color: #fff;
+  line-height: 57px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .main {
   @media screen and (max-width: 620px) {
     .container1170px {
@@ -80,24 +95,11 @@
   }
 
   &__btn {
-    display: inline-block;
+    @include greenBtn;
     height: 60px;
     min-width: 330px;
     margin: 33px 0 0 105px;
-    padding-left: 45px;
-    padding-right: 45px;
-    background: linear-gradient(#92cf00, #6e9c00);
-    border-radius: 5px;
-    border-bottom: 5px solid #5c8200;
-    box-sizing: border-box;
-    cursor: pointer;
-    color: #fff;
-    line-height: 57px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-family: "Arial", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
+
     &:hover {
       background: linear-gradient(#b5ff03, #80b500);
     }

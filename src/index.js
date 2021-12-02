@@ -1,14 +1,7 @@
-/*
- * External dependencies
- */
+import "font-awesome/scss/font-awesome.scss";
+import swiper from "./components/swiper";
+import "./styles/style.scss";
 
-
-/*
- * Internal dependencies
- */
-import "./styles/style.scss"
-import componentName from "./components/componentName";
-
-document.addEventListener('DOMContentLoaded', () => {
-    componentName()
-})
+document.addEventListener("DOMContentLoaded", () => {
+  swiper();
+});

@@ -1,54 +1,63 @@
+@mixin h2345 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@mixin h2_1170px {
+  padding: 50px 0;
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@mixin h2_670px {
+  padding: 30px 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+@mixin h2_480px {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .parameters {
   &__wrapper {
     position: relative;
-    height: 895px;
+
     @media screen and (max-width: 1170px) {
       max-width: 940px;
       margin: 0 auto;
-      height: 400px;
-    }
-    @media screen and (max-width: 770px) {
-      height: 300px;
-    }
-    @media screen and (max-width: 600px) {
-      height: 200px;
-    }
-    @media screen and (max-width: 400px) {
-      height: 160px;
     }
   }
+
   h2 {
-    text-align: center;
-    font-weight: bold;
-    font-family: "Lora", serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    @include h2345;
+
     padding: 75px 0;
     color: #3f2803;
     font-size: 45px;
     line-height: 60px;
+
     @media screen and (max-width: 1170px) {
-      padding: 50px 0;
-      font-size: 30px;
-      line-height: 45px;
-      max-width: 600px;
-      margin: 0 auto;
+      @include h2_1170px;
     }
+
     @media screen and (max-width: 670px) {
-      padding: 30px 0;
-      font-size: 24px;
-      line-height: 30px;
+      @include h2_670px;
     }
+
     @media screen and (max-width: 480px) {
-      font-size: 18px;
-      line-height: 25px;
+      @include h2_480px;
     }
   }
 
   &__bg {
     max-width: 100%;
     position: relative;
-    height: 100%;
+    height: 550px;
     background: url(../images/parameters/greenhouse-parameters.jpg) no-repeat 0
       0;
     background-size: contain;
@@ -57,6 +66,19 @@
       background: url(../images/parameters/greenhouse-parameters-medium.jpg)
         no-repeat center 0;
       background-size: contain;
+      height: 400px;
+    }
+
+    @media screen and (max-width: 770px) {
+      height: 300px;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 200px;
+    }
+
+    @media screen and (max-width: 400px) {
+      height: 160px;
     }
   }
 
@@ -94,11 +116,14 @@
       p {
         text-align: right;
       }
+
       @media screen and (max-width: 1170px) {
         display: block;
+
         h4 {
           text-align: center;
         }
+
         p {
           text-align: left;
         }
@@ -109,15 +134,18 @@
       top: 265px;
       left: 0;
     }
+
     div:nth-of-type(2) {
       top: 265px;
       right: 0;
+
       h4 {
         width: 600px;
         @media screen and (max-width: 1170px) {
           width: auto;
         }
       }
+
       p {
         width: 575px;
         @media screen and (max-width: 1170px) {
@@ -129,31 +157,40 @@
       top: 460px;
       left: 0;
     }
+
     div:nth-of-type(4) {
       top: 390px;
       right: 0;
+
       h4 {
         width: 320px;
+
         @media screen and (max-width: 1170px) {
           width: auto;
         }
       }
     }
+
     div:nth-of-type(5) {
       top: 720px;
       left: 0;
+
       p {
         width: 540px;
+
         @media screen and (max-width: 1170px) {
           width: auto;
         }
       }
     }
+
     div:nth-of-type(6) {
       top: 730px;
       right: 0;
+
       P {
         width: 450px;
+
         @media screen and (max-width: 1170px) {
           width: auto;
         }
@@ -165,6 +202,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     @media screen and (max-width: 770px) {
       flex-direction: column;
       flex-wrap: nowrap;
@@ -182,14 +220,17 @@
       line-height: 30px;
       text-transform: uppercase;
       letter-spacing: 1px;
+
       @media screen and (max-width: 1170px) {
         text-align: center;
       }
     }
+
     p {
       width: 330px;
       margin: -5px 0 0;
       padding: 5px 0;
+
       @media screen and (max-width: 1170px) {
         width: auto;
       }

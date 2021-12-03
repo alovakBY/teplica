@@ -5179,12 +5179,22 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__item .footer__group {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__item .footer__group br {
+    display: none;
+  }
+  .footer__item .footer__group p {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 768px) {
   .footer__item {
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
   }
   .footer__item p,
 .footer__item h4 {

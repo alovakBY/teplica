@@ -1,0 +1,155 @@
+.reviews {
+  background: url(../images/reviews/greenhoouse-reviews.jpg) no-repeat center;
+  background-size: contain;
+  margin-top: 120px;
+  height: 630px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  .container1170px {
+    position: relative;
+  }
+
+  &__title {
+    @include h2345;
+    padding-top: 15px;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    width: 25%;
+    margin: 0 auto;
+    @media screen and (max-width: 1170px) {
+      padding-top: 30px;
+      font-size: 27px;
+      line-height: 45px;
+    }
+    @media screen and (max-width: 767px) {
+      color: #3f2803;
+      width: 100%;
+      padding-top: 10px;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      position: static;
+    }
+  }
+
+  &__column {
+    max-width: 35%;
+    > div + div {
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 940px) {
+      max-width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  .right {
+    .reviews__item_top {
+      justify-content: flex-end;
+    }
+    .reviews__item_bottom {
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width: 767px) {
+        justify-content: flex-start;
+      }
+    }
+    .reviews__item_photo {
+      order: 2;
+      margin: 15px 0px 5px 15px;
+      @media screen and (max-width: 767px) {
+        margin: 0 0 5px;
+        order: -1;
+      }
+    }
+    p {
+      text-align: right;
+      @media screen and (max-width: 767px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__item {
+    &_top {
+      display: flex;
+      margin-bottom: 10px;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &_photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 15px 15px 5px 0;
+    }
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &_name {
+        font-weight: bold;
+        font-family: "Lora", serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      &_city {
+        display: inline-block;
+        padding-top: 5px;
+        color: #80b500;
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 767px) {
+        align-items: center;
+      }
+    }
+
+    &_bottom {
+      .maxWidth {
+        width: 75%;
+      }
+    }
+    &_text {
+      @media screen and (max-width: 1170px) {
+        max-width: 85%;
+        font-size: 13px;
+      }
+      @media screen and (max-width: 940px) {
+        max-width: 65%;
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+    background: url(../images/reviews/greenhoouse-reviews-medium.jpg) no-repeat
+      center;
+    background-position: 50% 100%;
+  }
+  @media screen and (max-width: 767px) {
+    background: none;
+    margin-top: 20px;
+    height: auto;
+  }
+}

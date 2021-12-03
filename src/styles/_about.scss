@@ -1,0 +1,115 @@
+.about {
+  padding-bottom: 60px;
+  &__title {
+    @include h2345;
+    font-size: 45px;
+    line-height: 60px;
+    padding: 55px 0;
+    color: #3f2803;
+    border-top: 2px solid #f2f5f8;
+
+    @media screen and (max-width: 1170px) {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    @media screen and (max-width: 940px) {
+      padding: 30px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &_text {
+      padding: 4px 10px 0 0;
+      color: #80b500;
+      line-height: 24px;
+      text-align: right;
+      max-width: 20%;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 0 10px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    @include input;
+    max-width: 20%;
+    @media screen and (max-width: 768px) {
+      min-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__tel {
+    @include input;
+    max-width: 20%;
+    @media screen and (max-width: 768px) {
+      min-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    @include greenBtn;
+    max-width: 30%;
+    height: 60px;
+
+    @media screen and (max-width: 940px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      min-width: 100%;
+    }
+  }
+
+  &__goToCatalog {
+    padding-top: 30px;
+    text-align: center;
+    a {
+      color: black;
+      display: inline-block;
+      font-size: 18px;
+      padding-bottom: 5px;
+      margin-left: 15px;
+      border-bottom: thin dashed #313437;
+      cursor: pointer;
+      transition: background-bottom-color 0.5s, color 0.5s;
+      &:hover {
+        color: #80b500;
+        border-bottom-color: #80b500;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 40px;
+  }
+}

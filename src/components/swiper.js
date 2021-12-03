@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 
 Swiper.use([Navigation, Autoplay]);
 
-function newSwiper() {
+function swiper() {
   const swiper = new Swiper(".swiper", {
     autoplay: {
       delay: 3000,
@@ -20,4 +20,4 @@ function newSwiper() {
   });
 }
 
-export default newSwiper;
+export default swiper;

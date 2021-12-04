@@ -3384,10 +3384,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 20000px;
-}
-
 .container1170px {
   max-width: 1210px;
   margin: 0px auto 0;

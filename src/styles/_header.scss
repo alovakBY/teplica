@@ -61,9 +61,11 @@
     font-size: 18px;
     line-height: 30px;
     a {
-      margin-left: 15px;
       color: #3f2803;
       line-height: 60px;
+    }
+    a + a {
+      margin-left: 15px;
     }
   }
 
@@ -136,4 +138,8 @@
       }
     }
   }
+}
+
+.w767px {
+  margin-bottom: 15px;
 }

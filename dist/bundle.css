@@ -3443,9 +3443,11 @@ html {
   line-height: 30px;
 }
 .container .header__phones a {
-  margin-left: 15px;
   color: #3f2803;
   line-height: 60px;
+}
+.container .header__phones a + a {
+  margin-left: 15px;
 }
 .container .header__callback,
 .container .header__delivery {
@@ -3529,6 +3531,10 @@ html {
   .container .header__info.w1024px :first-child {
     margin: 5px 0 10px;
   }
+}
+
+.w767px {
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 620px) {

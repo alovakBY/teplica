@@ -1,7 +1,7 @@
 .catalog {
   margin-bottom: 80px;
   &__title {
-    @include h2345;
+    @include titlesFonts;
 
     padding: 75px 0;
     color: #3f2803;

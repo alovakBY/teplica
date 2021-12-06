@@ -1,7 +1,7 @@
 .about {
   padding-bottom: 60px;
   &__title {
-    @include h2345;
+    @include titlesFonts;
     font-size: 45px;
     line-height: 60px;
     padding: 55px 0;

@@ -1,7 +1,7 @@
 .advantages {
   padding-bottom: 10px;
   &__title {
-    @include h2345;
+    @include titlesFonts;
     color: #3f2803;
     padding: 105px 0 75px;
     font-size: 30px;

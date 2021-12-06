@@ -15,8 +15,8 @@
 .questions {
   height: 510px;
   padding-top: 105px;
-  background: url(../images/questions/greenhouse-contactform.jpg) no-repeat
-    center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   .questions__wrapper {
     display: flex;
@@ -39,7 +39,7 @@
     flex: 1 1 35%;
     padding-top: 15px;
     span {
-      @include h2345;
+      @include titlesFonts;
       background: rgba(254, 232, 114, 0.7);
     }
     &:last-child {

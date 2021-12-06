@@ -1,3 +1,11 @@
+@mixin titlesFonts {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 @mixin greenBtn {
   padding: 0 45px;
   background: linear-gradient(#92cf00, #6e9c00);
@@ -26,17 +34,15 @@
   color: #3f2803;
   text-align: center;
   border-bottom: 2px solid #f2f5f8;
-  background: url(../images/title/greenhouse-and-girl.jpg) no-repeat 0% 0%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 
   &__title {
     padding-left: 120px;
     h1 {
+      @include titlesFonts;
       font-size: 90px;
       line-height: 90px;
-      font-weight: bold;
-      font-family: "Lora";
-      text-transform: uppercase;
-      letter-spacing: 1px;
 
       span {
         display: block;

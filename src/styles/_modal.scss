@@ -71,7 +71,7 @@
   }
 
   &__title {
-    @include h2345;
+    @include titlesFonts;
     color: #fff;
     font-size: 30px;
     line-height: 30px;

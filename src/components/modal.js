@@ -1,7 +1,6 @@
 "use strict";
 
 function modal() {
-  const callbackBtn = document.querySelectorAll(".header__callback-callback");
   const modal = document.querySelector(".modal");
   const modalCloseBtn = document.querySelector(".modal__close");
 

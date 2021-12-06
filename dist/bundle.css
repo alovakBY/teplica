@@ -3529,7 +3529,7 @@ html {
     flex-direction: column;
   }
   .container .header__info.w1024px :first-child {
-    margin: 5px 0 10px;
+    margin: 0px 0 10px;
   }
 }
 
@@ -3592,7 +3592,7 @@ html {
 }
 @media screen and (max-width: 490px) {
   .title__title h1 {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 .title__title strong {
@@ -5238,27 +5238,17 @@ html {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #80b500;
   z-index: -10;
   opacity: 0;
   transition: opacity 0.5s;
-}
-.modal .container1170px {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  .modal .container1170px {
-    padding: 0 5px;
-  }
+  overflow-y: auto;
+  padding-top: 200px;
 }
 .modal__wrapper {
   position: relative;
@@ -5267,12 +5257,11 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
 }
 .modal__close {
   position: absolute;
   right: 0;
-  top: -45px;
+  top: 0px;
   width: 40px;
   height: 40px;
   opacity: 0.5;
@@ -5318,7 +5307,7 @@ html {
     line-height: 17px;
     letter-spacing: inherit;
     font-size: 15px;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 .modal__form {
@@ -5379,6 +5368,11 @@ html {
 @media screen and (max-width: 940px) {
   .modal__submit {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    padding-top: 100px;
   }
 }
 

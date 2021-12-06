@@ -1,7 +1,1 @@
-# job
-# job
-# job
-# job
-# job
-# teplicy
-# teplica
+# https://alovakby.github.io/teplica/

@@ -66,7 +66,7 @@
 						</hgroup>
 						<strong>для дачи и бизнеса</strong>
 					</div>
-					<button class="title__btn">Выбрать теплицу</button>
+					<button class="title__btn"><a href="#catalog">Выбрать теплицу</a></button>
 					<div class="title__warranty">
 						<img src="./src/images/title/greenhouse-warranty.png" alt="warranty" />
 					</div>
@@ -244,10 +244,10 @@
 							<span class="card__price_calculator">450</span>
 							рублей.
 						</div>
-						<div class="card__tel">
+						<form class="card__tel">
 							<input type="tel" name="phone" placeholder="Введите номер телефона" required>
 							<button class="card__btn" type="submit">Заказать</button>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -258,11 +258,11 @@
 					<h3 class="questions__question">
 						<span>Не знаете, какая теплица вам подойдет лучше всего? </span>
 					</h3>
-					<div class="questions__form">
+					<form class="questions__form">
 						<input type="text" placeholder="Имя">
-						<input type="tel" placeholder="Телефон">
-						<button>перезвоните мне</button>
-					</div>
+						<input type="tel" placeholder="Телефон" required>
+						<button type="submit">перезвоните мне</button>
+					</form>
 					<h3 class="questions__question">
 						<span>Наш менеджер свяжется с вами и ответит на все вопросы </span>
 					</h3>
@@ -482,7 +482,7 @@
 				<div class="about__callback">
 					<p class="about__callback_text">Заполните форму и мы вам детально обо всем расскажем</p>
 					<input type="text" placeholder="Имя" class="about__name">
-					<input type="tel" name="phone" placeholder="Телефон" class="about__tel">
+					<input type="tel" name="phone" placeholder="Телефон" class="about__tel" required>
 					<button class="about__btn">Перезвоните мне</button>
 				</div>
 				<div class="about__goToCatalog">или <a href='#catalog'>Выберите комплектацию теплицы</a></div>
@@ -531,9 +531,9 @@
 							Звоните
 						</h4>
 						<div class="footer__group">
-							<p>044 465-75-25</p><br>
-							<p>067 755-75-25</p><br>
-							<p>095 700-75-25</p><br>
+							<a href="#">044 465-75-25</a><br>
+							<a href="#">067 755-75-25</a><br>
+							<a href="#">095 700-75-25</a><br>
 						</div>
 					</div>
 				</div>
@@ -542,6 +542,21 @@
 				</div>
 			</div>
 		</footer>
+		<section class="modal">
+			<div class="container1170px">
+				<div class="modal__wrapper">
+					<div class="modal__close"></div>
+					<h4 class="modal__title">
+						Заполните форму и мы вам перезвоним
+					</h4>
+					<form action="#" class="modal__form">
+						<input type="text" placeholder="Имя">
+						<input type="tel" placeholder="Телефон" required>
+						<button class="modal__submit">Перезвоните мне</button>
+					</form>
+				</div>
+			</div>
+		</section>
 	</div>
 
 	<!-- 

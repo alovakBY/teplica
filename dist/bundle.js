@@ -188,6 +188,38 @@ ansiHTML.reset()
 
 /***/ }),
 
+/***/ "./src/components/modal.js":
+/*!*********************************!*\
+  !*** ./src/components/modal.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+
+
+function modal() {
+  var callbackBtn = document.querySelectorAll(".header__callback-callback");
+  var modal = document.querySelector(".modal");
+  var modalCloseBtn = document.querySelector(".modal__close");
+  document.body.addEventListener("click", function (e) {
+    if (!e.target.closest(".header__callback-callback")) return;
+    modal.classList.add("modalActive");
+    document.body.classList.add("bodyActiv");
+  });
+  modalCloseBtn.addEventListener("click", function () {
+    modal.classList.remove("modalActive");
+    document.body.classList.remove("bodyActiv");
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modal);
+
+/***/ }),
+
 /***/ "./src/components/swiper.js":
 /*!**********************************!*\
   !*** ./src/components/swiper.js ***!
@@ -237,11 +269,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var font_awesome_scss_font_awesome_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! font-awesome/scss/font-awesome.scss */ "./node_modules/font-awesome/scss/font-awesome.scss");
 /* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/swiper */ "./src/components/swiper.js");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/style.scss */ "./src/styles/style.scss");
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/modal */ "./src/components/modal.js");
+
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
   (0,_components_swiper__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  (0,_components_modal__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 /***/ }),
@@ -1275,7 +1310,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1638641533040
+      // 1638772626702
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -1295,7 +1330,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1638641533044
+      // 1638772626729
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -1315,7 +1350,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1638641533029
+      // 1638772626736
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -1335,7 +1370,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1638641533057
+      // 1638780731355
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -17448,7 +17483,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d684ad499ac92bcfa403")
+/******/ 		__webpack_require__.h = () => ("d195570aed0421cd106d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

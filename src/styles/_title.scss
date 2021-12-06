@@ -62,7 +62,7 @@
       }
 
       @media screen and (max-width: 490px) {
-        padding-top: 60px;
+        padding-top: 50px;
       }
     }
 
@@ -98,6 +98,16 @@
     height: 60px;
     min-width: 330px;
     margin: 33px 0 0 105px;
+    position: relative;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: inherit;
+    }
 
     &:hover {
       background: linear-gradient(#b5ff03, #80b500);

@@ -5248,7 +5248,11 @@ html {
   opacity: 0;
   transition: opacity 0.5s;
   overflow-y: auto;
-  padding-top: 200px;
+}
+@media screen and (max-width: 480px) {
+  .modal .container1170px {
+    padding: 0 10px;
+  }
 }
 .modal__wrapper {
   position: relative;
@@ -5257,11 +5261,17 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 200px;
+}
+@media screen and (max-width: 768px) {
+  .modal__wrapper {
+    padding-top: 100px;
+  }
 }
 .modal__close {
   position: absolute;
   right: 0;
-  top: 0px;
+  top: 10px;
   width: 40px;
   height: 40px;
   opacity: 0.5;
@@ -5300,7 +5310,7 @@ html {
   color: #fff;
   font-size: 30px;
   line-height: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 940px) {
   .modal__title {
@@ -5368,11 +5378,6 @@ html {
 @media screen and (max-width: 940px) {
   .modal__submit {
     margin-top: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .modal {
-    padding-top: 100px;
   }
 }
 
